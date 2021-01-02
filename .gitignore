@@ -1,0 +1,10 @@
+*~
+._*
+.DS_Store
+
+# package directories
+node_modules
+dist
+db
+.eslintcache
+.env

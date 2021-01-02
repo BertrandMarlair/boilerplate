@@ -1,0 +1,129 @@
+version: '3.8'
+services:
+  domoticz:
+    container_name: domoticz
+    build:
+      context: ./Domoticz
+      dockerfile: ./Dockerfile
+    working_dir: /src/app
+    volumes:
+      - ./Domoticz/package.json:/src/app/package.json:delegated
+      - ./Domoticz/src:/src/app/src:delegated
+    expose:
+      - "4000"
+    ports:
+      - "4000:4000"
+    networks:
+      - webnet
+  authentification:
+    container_name: authentification
+    build:
+      context: ./Auth
+      dockerfile: ./Dockerfile
+    working_dir: /src/app
+    volumes:
+      - ./Auth/package.json:/src/app/package.json:delegated
+      - ./Auth/src:/src/app/src:delegated
+    expose:
+      - "3003"
+    ports:
+      - "3003:3003"
+    networks:
+      - webnet
+  gateway:
+    container_name: gateway
+    build:
+      context: ./Gateway
+      dockerfile: ./Dockerfile
+    working_dir: /src/app
+    volumes:
+      - ./Gateway/package.json:/src/app/package.json:delegated
+      - ./Gateway/src:/src/app/src:delegated
+    expose:
+      - "3001"
+    ports:
+      - "3001:3001"
+    networks:
+      - webnet
+    command: "npm start"
+  config:
+    container_name: config
+    build:
+      context: ./Config
+      dockerfile: ./Dockerfile
+    environment:
+      - "DOMAIN=http://localhost:3000"
+      - "CORS=false"
+    working_dir: /src/app
+    volumes:
+      - ./Config/package.json:/src/app/package.json:delegated
+      - ./Config:/src/app:delegated
+    networks:
+      - webnet
+    ports:
+      - "3002:3002"
+    env_file:
+      - ./Config/.env
+    command: "npm start"
+  redis:
+    container_name: redis
+    image: "bitnami/redis:5.0.10"
+    environment:
+      - ALLOW_EMPTY_PASSWORD=yes
+    networks:
+      - webnet
+    ports:
+      - "6379:6379"
+    expose: 
+      - "6379"
+    logging:
+      options:
+        max-size: 1m
+    healthcheck:
+      test: ["CMD", "redis-cli", "ping"]
+      interval: 60s
+      timeout: 10s
+      retries: 30
+  mongo_auth: 
+    container_name: mongo_auth
+    restart: always
+    build:
+      context: ./MongoAuth
+      dockerfile: ./Dockerfile
+    volumes: 
+      - ./MongoAuth/db:/data/db
+    env_file:
+      - ./Config/.env
+    ports:
+      - "27018:27017"
+    networks:
+      - webnet
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongo localhost:27017/test
+      interval: 60s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+  mongo_domoticz: 
+    container_name: mongo_domoticz
+    restart: always
+    build:
+      context: ./MongoDomoticz
+      dockerfile: ./Dockerfile
+    volumes: 
+      - ./MongoDomoticz/db:/data/db
+    env_file:
+      - ./Config/.env
+    ports:
+      - "27017:27017"
+    networks:
+      - webnet
+    healthcheck:
+      test: echo 'db.runCommand("ping").ok' | mongo localhost:27017/test
+      interval: 60s
+      timeout: 10s
+      retries: 5
+      start_period: 40s
+networks:
+  webnet:
+    driver: bridge

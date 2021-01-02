@@ -1,0 +1,37 @@
+{
+  "name": "config",
+  "version": "0.0.1",
+  "description": "Service provide all environment config",
+  "license": "MIT",
+  "main": "./src/index.js",
+  "scripts": {
+    "start": "babel-watch src/index.js",
+    "build": "webpack ./src",
+    "eslint": "eslint ./",
+    "eslint-fix": "eslint ./ --fix",
+    "prod": "node dist/api.bundle.js"
+  },
+  "dependencies": {
+    "chalk": "^3.0.0",
+    "cors": "^2.8.5",
+    "express": "^4.17.1",
+    "http": "0.0.0",
+    "jsonwebtoken": "^8.5.1",
+    "ora": "^4.0.3"
+  },
+  "devDependencies": {
+    "@babel/cli": "^7.8.4",
+    "@babel/core": "^7.8.7",
+    "@babel/node": "^7.8.7",
+    "@babel/plugin-proposal-object-rest-spread": "^7.8.3",
+    "@babel/preset-env": "^7.8.7",
+    "@babel/preset-flow": "^7.8.3",
+    "babel-eslint": "^10.1.0",
+    "babel-plugin-transform-inline-environment-variables": "^0.4.3",
+    "babel-watch": "^7.0.0",
+    "eslint": "^6.8.0",
+    "webpack": "^4.43.0",
+    "webpack-cli": "^3.3.12",
+    "webpack-dotenv-plugin": "^2.1.0"
+  }
+}

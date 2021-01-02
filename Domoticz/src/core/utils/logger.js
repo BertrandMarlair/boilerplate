@@ -1,0 +1,27 @@
+import winston from "winston"
+
+const logger = winston.createLogger({
+    format: winston.format.simple(),
+    transports: [
+        new winston.transports.Console({
+            timestamp: true,
+            level: "debug",
+            handleExceptions: true,
+            json: false,
+            colorize: true,
+        }),
+    ],
+    exitOnError: false,
+});
+
+logger.stream = {
+    write: message => logger.info(message.replace(/\n$/, "")),
+};
+    
+export const logging = (log, name) => {
+ console.log(`==============================${name} START ==============================`)
+ console.log(log)
+ console.log(`==============================${name} END ==============================`)
+}
+
+export default logger;

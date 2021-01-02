@@ -1,0 +1,148 @@
+{
+    "menu": {
+        "global": {
+            "applications": "Applications"
+        }
+    },
+    "header": {
+        "menu": {
+            "help": "Help",
+            "feedback": "Send feedback",
+            "bug": "Report a bug/incident"
+        },
+        "settings": {
+            "theme": "Darkmode",
+            "enable": "activated",
+            "disable": "disabled",
+            "language": "Selected language",
+            "zoom": "Zoom",
+            "en": "English",
+            "nl": "Nederlands",
+            "fr": "Français"
+        },
+        "avatar": {
+            "logout": "Log off"
+        }
+    },
+    "connect": {
+        "login": {
+            "title": "Log in to Your Account",
+            "description": "Log in to the b.rx platform, from regulatory reporting to regulatory intelligence",
+            "nameInputTitle": "Name",
+            "nameInputLabel": "Enter your name",
+            "passwordInputTitle": "Password",
+            "passwordInputLabel": "Enter your password",
+            "submit": "LOG IN",
+            "forgot": "Forgot password",
+            "noAccountTitle": "Don’t Have an Account Yet ?",
+            "noAccountDescription": "Log in to the b.rx platform, from regulatory reporting to regulatory intelligence",
+            "signup": "Sign Up",
+            "errors": {
+                "invalidName": "Your name is invalid",
+                "invalidPassword": "Your password is invalid",
+                "failLogin": "Your name and / or password are not correct",
+                "revokeAccess": "Your access has been revoked",
+                "unverified": "Unverified account",
+                "unverifiedByAdmin": "Your account must be verified by an administrator",
+                "forbidden": "Inactive user - forbidden login",
+                "invalidMfa": "The authentication key is invalid",
+                "locked": "Sorry your account is currently locked, please contact your administrator for help"
+            },
+            "success": {
+                "connect": "You are connected"
+            }
+        },
+        "verifyname": {
+            "title": "Your name is now confirmed!",
+            "description": "You can now log in and enjoy the b-fine experience."
+        },
+        "failverifyname": {
+            "title": "There was a problem during the validation of your name!",
+            "description": "Please go back to your mailbox if your account is not yet activated and click on the link. If your account is already active, you can simply log in."
+        },
+        "expiredverifyname": {
+            "title": "Your address verification has expired",
+            "description": "Please click on the link below to send a new name to validate your e-mail address.",
+            "submit": "Send a new name confirmation"
+        },
+        "resetpassword": {
+            "title": "Reset your password",
+            "description": "Please fill in the fields below to get a new password.",
+            "submit": "Reset my password"
+        },
+        "createpassword": {
+            "title": "Create your password",
+            "description": "Please fill in the fields below to create your password.",
+            "submit": "Create my password"
+        },
+        "invitation": {
+            "title": "Confirm your new invitation",
+            "description": "Please fill in the fields below to get a new password.",
+            "submit": "Get my password"
+        },
+        "forgotPassword": {
+            "title": "Forgot your password?",
+            "description": "No worries, we'll send you a recovery link.",
+            "submit": "Send recovery link",
+            "send": {
+                "title": "Confirmation name sent !",
+                "description": "Your account has been successfully reset. To complete the process, please verify your name address for a new validation request."
+            },
+            "errors": {
+                "noUser": "There is no user found",
+                "unverified": "Unverified account - please check your name",
+                "internal": "Internal server error"
+            }
+        },
+        "signin": {
+            "title" : "Create a new account",
+            "description" : "Let us prepare you so that you can start creating your first integrated reporting experience.",
+            "nameInputTitle" : "Name",
+            "nameInputLabel" : "Enter your name address",
+            "typeInputTitle" : "User type",
+            "typeInputLabel" : "Select your user type",
+            "passwordInputTitle" : "Password",
+            "passwordTempInputTitle" : "Temporary password",
+            "passwordTempLabelInputTitle" : "Enter the password you received in your name invitation",
+            "passwordInputLabel" : "Enter your password",
+            "confirmPasswordInputTitle" : "Confirm password",
+            "confirmPasswordInputLabel" : "Confirm your password",
+            "submit" : "To register",
+            "alreadyAccountTitle" : "Already registered?",
+            "alreadyAccountDescription" : "Login to your account to continue working on your regulatory reports.",
+            "login" : "Login to the site",
+            "success": {
+                "register": "Account created!",
+                "invitation": "Invitation has been sent"
+            },
+            "errors": {
+                "alreadyRegistered": "This user is already registered! If this is your account, please login.",
+                "invalidName": "Your name is invalid",
+                "invalidType": "Your user type is not valid",
+                "invalidPassword": "Your password is too short",
+                "invalidConfirmPassword": "Your password confirmation does not match the password",
+                "invalidConfirmPasswordShort": "Your password confirmation is too short",
+                "condition": "You have to agree with our Terms & Conditions"
+            },
+            "name": {
+                "title": "Confirm your name!",
+                "description": "Your account has been successfully registered. To complete the process please check your name for a validation request."
+            }
+        },
+        "reset":{
+            "success": "Your password has been reset, you can now log in."
+        },
+        "verify": {
+            "success": "Your account has been verified, you can now log in.",
+            "missing": "Missing parameters!",
+            "unknown": "Unknown User!",
+            "alreadyVerified": "Your account has already been verified!",
+            "invalidToken": "Invalid token!",
+            "expiredToken": "Expired token!"
+        }
+    },
+    "notfound": {
+        "title": "Page not found",
+        "back": "Back to Home"
+    }
+}

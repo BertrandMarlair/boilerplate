@@ -1,0 +1,148 @@
+{
+    "menu": {
+        "global": {
+            "applications": "Applications"
+        }
+    },
+    "header": {
+        "menu": {
+            "help": "Aide",
+            "feedback": "Envoyer un feedback",
+            "bug": "Rapporter un bug"
+        },
+        "settings": {
+            "theme": "Thème sombre",
+            "enable": "activé",
+            "disable": "désactivé",
+            "language": "Langue sélectionné",
+            "zoom": "Zoom",
+            "en": "English",
+            "nl": "Nederlands",
+            "fr": "Français"
+        },
+        "avatar": {
+            "logout": "Se déconnecter"
+        }
+    },
+    "connect": {
+        "login": {
+            "title" : "Connectez-vous à votre compte",
+            "description" : "Connectez-vous à votre compte pour pouvoir continuer à construire et éditer votre rapport d'intégration",
+            "nameInputTitle" : "Nom",
+            "nameInputLabel" : "Entrez votre adresse e-mail",
+            "passwordInputTitle" : "Mot de passe",
+            "passwordInputLabel" : "Entrez votre mot de passe",
+            "submit" : "CONNECTION",
+            "forgot" : "Mot de passe oublié",
+            "noAccountTitle" : "Vous n'avez pas encore de compte ?",
+            "noAccountDescription" : "Laissez-nous vous préparer pour que vous puissiez commencer à créer votre première expérience de rapport d'intégration.",
+            "signup" : "S'inscrire",
+            "errors": {
+                "invalidName": "Votre nom est invalide",
+                "invalidPassword": "Votre mot de passe est invalide",
+                "failLogin": "Votre nom et / ou mot de passe ne sont pas corrects",
+                "revokeAccess": "Votre accès a été révoqué",
+                "unverified": "Compte non vérifié",
+                "unverifiedByAdmin": "Votre compte doit être vérifié par un administrateur",
+                "forbidden": "Utilisateur inactif - connexion interdite",
+                "invalidMfa": "La clé d'authentification n'est pas valable",
+                "locked": "Désolé, votre compte est actuellement bloqué, veuillez contacter votre administrateur pour obtenir de l'aide"
+            },
+            "success": {
+                "connect": "Vous êtes connecté"
+            }
+        },
+        "verifyname": {
+            "title": "Votre e-mail est maintenant confirmé!",
+            "description": "Vous pouvez maintenant vous connecter et profiter de l'expérience b-fine."
+        },
+        "failverifyname": {
+            "title": "Il y a eu un problème lors de la validation de votre mail !",
+            "description": "Veuillez retourner à votre boîte aux lettres si votre compte n'est pas encore activé et cliquez sur le lien qui s'y trouve. Si votre compte est déjà actif, veuillez simplement vous connecter."
+        },
+        "expiredverifyname": {
+            "title": "Votre vérification d'adresse a expiré",
+            "description": "Veuillez cliquer sur le lien pour valider votre adresse e-mail.",
+            "submit": "Envoyer un nouveau mail de confirmation"
+        },
+        "resetpassword": {
+            "title": "Réinitialiser votre mot de passe",
+            "description": "Veuillez remplir les champs ci-dessous pour obtenir un nouveau mot de passe.",
+            "submit": "Réinitialiser mon mot de passe"
+        },
+        "createpassword": {
+            "title": "Créez votre mot de passe",
+            "description": "Veuillez remplir les champs ci-dessous pour créer votre mot de passe.",
+            "submit": "Créer mon mot de passe"
+        },
+        "invitation": {
+            "title": "Confirmez votre nouvelle invitation",
+            "description": "Veuillez remplir les champs ci-dessous pour obtenir un nouveau mot de passe.",
+            "submit": "Obtenir mon mot de passe"
+        },
+        "forgotPassword": {
+            "title": "Mot de passe oublié ?",
+            "description": "Ne vous inquiétez pas, nous vous enverrons un lien de récupération.",
+            "submit": "Envoyer le lien de récupération",
+            "send": {
+                "title": "Email de confirmation envoyé !",
+                "description": "Votre compte a été réinitialisé avec succès. Pour terminer le processus, veuillez vérifier votre adresse électronique pour une nouvelle demande de validation."
+            },
+            "errors": {
+                "noUser": "Il n'y a pas d'utilisateur trouvé",
+                "unverified": "Compte non vérifié - veuillez vérifier vos e-mails",
+                "internal": "Erreur interne du serveur"
+            }
+        },
+        "signin": {
+            "title" : "Créer un nouveau compte",
+            "description" : "Laissez-nous vous préparer pour que vous puissiez commencer à créer votre première expérience de rapport d'intégration.",
+            "nameInputTitle" : "Email",
+            "nameInputLabel" : "Entrer votre adresse nom",
+            "typeInputTitle" : "Type d'utilisateur",
+            "typeInputLabel" : "Selectionner un type d'utilisateur",
+            "passwordInputTitle" : "Mot de passe",
+            "passwordTempInputTitle" : "Mot de passe temporaire",
+            "passwordTempLabelInputTitle" : "Entrez le mot de passe que vous avez reçu dans votre invitation par mail",
+            "passwordInputLabel" : "Entrer votre mot de passe",
+            "confirmPasswordInputTitle" : "Confirmer le mot de passe",
+            "confirmPasswordInputLabel" : "Confirmer votre mot de passe",
+            "submit" : "S'inscrire",
+            "alreadyAccountTitle" : "Déjà inscrit ?",
+            "alreadyAccountDescription" : "Connectez-vous à votre compte pour continuer à construire et éditer votre rapport d'intégration.",
+            "login" : "Se connecter",
+            "success": {
+                "register": "Compte créé !",
+                "invitation": "L'invitation a été envoyée"
+            },
+            "errors": {
+                "alreadyRegistered": "Cet utilisateur est déjà enregistré ! Si c'est votre compte, veuillez vous connecter.",
+                "invalidEmail": "Votre nom est invalide",
+                "invalidType": "Votre type d'utilisateur est incorrecte",
+                "invalidPassword": "Votre mot de passe est trop court",
+                "invalidConfirmPassword": "Votre confirmation de mot de passe ne correspond pas avec le mot de passe",
+                "invalidConfirmPasswordShort": "Votre confirmation de mot de passe est trop court",
+                "condition": "Vous devez accepter nos conditions générales"
+            },
+            "name": {
+                "title": "Confirmez votre nom !",
+                "description": "Votre compte a été enregistré avec succès. Pour terminer le processus, veuillez vérifier votre adresse électronique pour une demande de validation."
+            }
+        },
+        "reset":{
+            "success": "Votre mot de passe a été changé, vous pouvez maintenant vous connecter."
+        },
+        "verify": {
+            "success": "Votre compte a été vérifié, vous pouvez maintenant vous connecter.",
+            "missing": "Paramètres manquants !",
+            "unknown": "Utilisateur inconnu !",
+            "alreadyVerified": "Déjà vérifié Votre compte a déjà été vérifié !",
+            "invalidToken": "Token non valable !",
+            "expiredToken": "Token expiré !"
+        }
+    },
+    "notfound": {
+        "title": "Page non trouvée",
+        "back": "Retour à la base "
+    }
+}
